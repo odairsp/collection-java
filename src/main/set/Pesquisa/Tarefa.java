@@ -40,6 +40,6 @@ public class Tarefa {
         return "Tarefa{" +
                 "descricao='" + descricao + '\'' +
                 ", concluido=" + concluido +
-                '}';
+                "}\n";
     }
 }

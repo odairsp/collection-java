@@ -97,5 +97,34 @@ public class ListaTarefas {
         tarefasSet.clear();
     }
 
+    public static void main(String[] args) {
+        ListaTarefas listaTarefas = new ListaTarefas();
+
+        listaTarefas.exibirTarefas();
+
+        listaTarefas.adicionarTarefa("Tarefa 1");
+        listaTarefas.adicionarTarefa("Tarefa 2");
+        listaTarefas.adicionarTarefa("Tarefa 3");
+        listaTarefas.adicionarTarefa("Tarefa 4");
+        listaTarefas.adicionarTarefa("Tarefa 5");
+        listaTarefas.adicionarTarefa("Tarefa 6");
+        System.out.println();
+        listaTarefas.exibirTarefas();
+        System.out.println();
+        System.out.println(listaTarefas.contarTarefas());
+        System.out.println();
+
+        listaTarefas.marcarTarefaConcluida("Tarefa 2");
+        listaTarefas.marcarTarefaConcluida("Tarefa 3");
+        listaTarefas.marcarTarefaConcluida("Tarefa 5");
+        System.out.println();
+        listaTarefas.exibirTarefas();
+        System.out.println(listaTarefas.obterTarefasConcluidas());
+        System.out.println(listaTarefas.obterTarefasPendentes());
+        listaTarefas.removerTarefa("Tarefa 5");
+        listaTarefas.exibirTarefas();
+        listaTarefas.limparListaTarefas();
+        listaTarefas.exibirTarefas();
+    }
 
 }
